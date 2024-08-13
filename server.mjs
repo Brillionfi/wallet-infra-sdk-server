@@ -13,9 +13,8 @@ const app = express();
 app.use(express.json());
 
 const baseUrl = process.env.BASE_URL;
-const redirectUrl =
-  process.env.REDIRECT_URL || "https://o-auth2-mock-server.vercel.app";
-const appId = process.env.APP_ID || "312c8442-23a5-4c62-b260-a74b16bb068f";
+const redirectUrl = process.env.REDIRECT_URL;
+const appId = process.env.APP_ID;
 const PORT = process.env.PORT || 8000;
 
 const sdk = new WalletInfra(appId, baseUrl);
@@ -33,6 +32,7 @@ const getJwt = async () => {
 
 const refreshJwt = async () => {
   const jwt = await getJwt();
+  console.log(jwt);
   if (jwt) {
     sdk.authenticateUser(jwt);
   } else {
