@@ -45,6 +45,10 @@ const refreshJwt = async () => {
   setInterval(refreshJwt, 50 * 60 * 1000);
 })();
 
+app.get("/health", (req, res) => {
+  res.status(200).json({status: "ok", message: "Server is running"});
+});
+
 app.use((req, res, next) => {
   req.sdk = sdk;
   next();
