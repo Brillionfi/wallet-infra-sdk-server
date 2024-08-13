@@ -7,7 +7,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "nohup node server.mjs"
   },
   "dependencies": {
     "@brillionfi/wallet-infra-sdk": "0.9.2-53452ff.0",
