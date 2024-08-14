@@ -115,7 +115,13 @@ router.post("/recovery", async (req, res, next) => {
 // wallet recover execute
 router.post("/recovery/execute", async (req, res, next) => {
   try {
-    const result = await req.sdk.Wallet.execRecovery(req.body);
+    const result = await req.sdk.Wallet.execRecovery(
+      req.body.eoa.organizationId,
+      req.body.eoa.userId,
+      req.body.newPasskeyName,
+      req.body.bundle,
+      req.body.origin
+    );
     res.json(result);
   } catch (error) {
     next(error);
