@@ -105,7 +105,7 @@ router.post("/:address/sign", async (req, res, next) => {
 // wallet recovery  init
 router.post("/recovery", async (req, res, next) => {
   try {
-    const result = await req.sdk.Wallet.initRecovery(req.body);
+    const result = await req.sdk.Wallet.initRecovery();
     res.json(result);
   } catch (error) {
     next(error);
