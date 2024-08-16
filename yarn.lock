@@ -30,10 +30,10 @@
     js-tokens "^4.0.0"
     picocolors "^1.0.0"
 
-"@brillionfi/wallet-infra-sdk@0.9.2-53452ff.0":
-  version "0.9.2-53452ff.0"
-  resolved "https://registry.yarnpkg.com/@brillionfi/wallet-infra-sdk/-/wallet-infra-sdk-0.9.2-53452ff.0.tgz#3e21c3675cb3ddb092b59c1ea97da2811e218788"
-  integrity sha512-tFsRJlMikzZyPwmtKh5CqPtJh+WevXCpWXvyBoovVvq2nIILYtoId+sRw/p3YPqmo8tX3FfRyrNOOPIEIUqtRg==
+"@brillionfi/wallet-infra-sdk@0.10.2-f9fa3e0.0":
+  version "0.10.2-f9fa3e0.0"
+  resolved "https://registry.yarnpkg.com/@brillionfi/wallet-infra-sdk/-/wallet-infra-sdk-0.10.2-f9fa3e0.0.tgz#ce86e0c8ec82c343673b42394e7b6d925371508b"
+  integrity sha512-5iaWQYkc4Yv6x1bmyuMzuS8/wgQLUvBFrD54pSE3fY1aq6Y0d79ryJ49m6SSJFFUrWFJpEwRSM6AwP35iCub8Q==
   dependencies:
     "@nexeraid/identity-sdk" "^1.2.32"
     "@types/jest" "^29.5.12"

@@ -10,7 +10,7 @@
     "start": "nohup node server.mjs > output.log 2>&1 &"
   },
   "dependencies": {
-    "@brillionfi/wallet-infra-sdk": "0.9.2-53452ff.0",
+    "@brillionfi/wallet-infra-sdk": "0.10.2-f9fa3e0.0",
     "axios": "^1.7.3",
     "dotenv": "^16.4.5",
     "express": "^4.19.2"
